@@ -41,3 +41,21 @@ aside {
   padding: 1em;
   border: 1px solid #ddd;
 }
+
+header ul {
+  display: flex;
+  list-style: none;
+  padding: 10px;
+  background-color: #faedcd;
+  border-bottom: 2px solid #d4a373;
+}
+
+header ul li {
+  margin-right: 20px;
+  font-weight: bold;
+}
+
+.logo {
+  font-size: 2em;
+  color: red;
+}
