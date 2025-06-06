@@ -42,3 +42,63 @@ header {
   color: #000000; /* Adjust color if needed */
   cursor: pointer;
 }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 35px 171px;
+  background-color: #fff;
+}
+
+.logo {
+  width: 167px;
+  height: 29px;
+  font-weight: bold; /* Or add your image here */
+}
+
+.nav-menu {
+  display: flex;
+  gap: 30px; /* adjust spacing */
+}
+
+.nav-item {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  color: #000;
+  text-decoration: none;
+}
+.quote-section {
+  background-color: #C271FF;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 20px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.quote-image img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  margin-right: 40px;
+}
+
+.quote-content blockquote {
+  font-style: italic;
+  font-size: 22px;
+  margin-bottom: 10px;
+}
+
+.quote-content h3 {
+  font-weight: 700;
+  margin: 5px 0 0 0;
+  font-size: 18px;
+}
+
+.quote-content p {
+  font-size: 14px;
+  margin: 0;
+}
+
