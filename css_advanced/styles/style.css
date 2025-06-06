@@ -101,4 +101,129 @@ header {
   font-size: 14px;
   margin: 0;
 }
+/* Container for the video cards list */
+.videos-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 24px;
+}
+
+/* Each video card */
+.video-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  width: 260px;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  font-family: 'Source Sans Pro', sans-serif;
+  transition: transform 0.2s ease;
+  cursor: pointer;
+}
+
+.video-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Preview image container for relative positioning */
+.preview-wrapper {
+  position: relative;
+  width: 100%;
+  height: 140px;
+  overflow: hidden;
+}
+
+.preview-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Play button styled as a circle with a triangle */
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 48px;
+  height: 48px;
+  background-color: rgba(255, 255, 255, 0.85);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 8px rgba(0,0,0,0.15);
+}
+
+.play-button::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 0 10px 16px;
+  border-color: transparent transparent transparent #000;
+  transform: translate(-40%, -50%);
+}
+
+/* Video title */
+.video-title {
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin: 12px 16px 6px;
+  color: #333;
+}
+
+/* Video description */
+.video-description {
+  font-weight: 400;
+  font-size: 0.9rem;
+  margin: 0 16px 16px;
+  color: #666;
+  line-height: 1.3;
+}
+
+/* Footer with author info, stars, and duration */
+.video-footer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px 16px;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+/* Author avatar image */
+.author-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Author name */
+.author-name {
+  font-weight: 600;
+  min-width: 100px;
+  color: #222;
+}
+
+/* Rating stars container */
+.rating-stars {
+  color: #f5a623; /* gold star color */
+  display: flex;
+  gap: 2px;
+  flex-grow: 1;
+}
+
+/* Duration text */
+.duration {
+  font-weight: 600;
+  color: #999;
+  white-space: nowrap;
+}
+
 
