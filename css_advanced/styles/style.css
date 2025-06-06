@@ -1,22 +1,44 @@
-/* Import fonts if needed */
-/* @font-face {
-  font-family: 'Spin Cycle OT';
-  src: url('../fonts/Spin-Cycle-OT.ttf') format('truetype');
-} */
-
-body {
-  margin: 0;
+/* Header container */
+header {
+  width: 1103px;
+  height: 29.5px; /* rounded from 29.4609 */
+  margin: 35px auto 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #FFFFFF;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
 }
 
-header, footer {
-  padding: 20px;
-  text-align: center;
-  background-color: #eee;
+/* Logo styling */
+.logo {
+  width: 167px;
+  height: 29.5px;
+  background-color: #FFFFFF;
+  font-weight: 700;
+  font-size: 20px; /* Adjust if needed */
+  display: flex;
+  align-items: center;
+  /* Add padding if needed */
 }
 
-main {
-  padding: 40px;
+/* Navigation menu */
+.nav-menu {
+  width: 234px;
+  height: 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 30px; /* space between items */
+}
+
+/* Navigation items */
+.nav-item {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0;
+  background-color: #FFFFFF;
+  color: #000000; /* Adjust color if needed */
+  cursor: pointer;
 }
